@@ -97,7 +97,7 @@ const ProductList = () => {
             </thead>
             <tbody>
               {products.map((product) =>
-                (filterCategory === '' || product.category === filterCategory) && (
+                (filterCategory === '' || filterCategory === 'all' || product.category === filterCategory) && (
                   <tr key={product.id} className={product.onSpecial ? 'special' : ''}>
                     <td>{product.name}</td>
                     <td>{product.description}</td>
