@@ -1,0 +1,34 @@
+.ProductListContainer {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .productName {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .productTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .productTable th,
+  .productTable td {
+    padding: 10px;
+    border-bottom: 1px solid #198f34;
+  }
+  
+  .productTable th {
+    background: #3cc237;
+  }
+  
+  .productTable .special {
+    background: #99e6be;
+  }
