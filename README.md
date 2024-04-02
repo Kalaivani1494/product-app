@@ -14,10 +14,11 @@ To start and use the app, follow these steps:
 Clone the repository or download the source code from https://github.com/Kalaivani1494/product-app
 
 Navigate to the project directory.
-cd product-app
+cd product-app-main
 
 Install the dependencies.
 npm install
+npm redux
 
 Start the application.
 npm start
