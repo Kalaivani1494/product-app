@@ -23,7 +23,6 @@ describe('App', () => {
         </MemoryRouter>
       </Provider>
     );
-    // Additional assertions or test logic
   });
 });
 
@@ -38,7 +37,6 @@ describe('ProductForm', () => {
         </MemoryRouter>
       </Provider>
     );
-    // Additional assertions or test logic
   });
 });
 
@@ -51,6 +49,5 @@ describe('ProductList', () => {
         </MemoryRouter>
       </Provider>
     );
-    // Additional assertions or test logic
   });
 });
