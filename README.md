@@ -11,26 +11,24 @@ React Router: React Router is a routing library for React applications. It enabl
 Jest - Framework for testing.
 
 ## Installation
-To start and use the app, follow these steps:
+To start and use the app, follow these steps:  
+Clone the repository or download the source code from https://github.com/Kalaivani1494/product-app  
 
-Clone the repository or download the source code from https://github.com/Kalaivani1494/product-app
+Navigate to the project directory.  
+cd product-app-main  
 
-Navigate to the project directory.
-cd product-app-main
-
-Install the dependencies.
+Install the dependencies.  
 npm install --save-dev jest @testing-library/react @testing-library/jest-dom
 
-Start the application.
+Start the application.  
 npm start
 
-To test the application
+To test the application  
 npm test
 
 The application will be running at http://localhost:3000.
 
 ## Usage
-
 ## Product List: 
 The app displays a list of products with their details, including description, expiration date, category, price, and special status. Special products are highlighted.
 
