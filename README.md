@@ -8,6 +8,8 @@ Redux: Redux is a predictable state management library. It helps manage the appl
 
 React Router: React Router is a routing library for React applications. It enables navigation and routing between different components, allowing us to create multiple pages and handle URL changes.
 
+Jest - Framework for testing.
+
 ## Installation
 To start and use the app, follow these steps:
 
@@ -17,12 +19,13 @@ Navigate to the project directory.
 cd product-app-main
 
 Install the dependencies.
-npm install
-npm redux
 npm install --save-dev jest @testing-library/react @testing-library/jest-dom
 
 Start the application.
 npm start
+
+To test the application
+npm test
 
 The application will be running at http://localhost:3000.
 
