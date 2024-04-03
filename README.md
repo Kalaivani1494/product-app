@@ -19,6 +19,7 @@ cd product-app-main
 Install the dependencies.
 npm install
 npm redux
+npm install --save-dev jest @testing-library/react @testing-library/jest-dom
 
 Start the application.
 npm start

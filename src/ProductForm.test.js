@@ -1,24 +1,32 @@
 // ProductForm.test.js
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import configureStore from 'redux-mock-store';
-import { ProductForm } from './components/ProductForm';
+import { store } from './app/store';
+import ProductForm from './components/ProductForm';
 import { MemoryRouter } from 'react-router-dom';
 
 describe('ProductForm', () => {
-  const mockStore = configureStore([]);
+  test('renders form with product name input', () => {
+    // Mock location object with a localhost path
+    const mockLocation = {
+      pathname: 'http://localhost:3000', // Mocking a localhost path
+      search: '?mock=search',
+      hash: '#mock-hash',
+      state: { mockState: true }
+    };
 
-  it('renders without errors', () => {
-    const store = mockStore({ products: [] });
     render(
+      // Wrap ProductForm with Provider and MemoryRouter
       <Provider store={store}>
-        <MemoryRouter>
+        <MemoryRouter initialEntries={[mockLocation]}> {/* Pass mock location to initialEntries */}
           <ProductForm />
         </MemoryRouter>
       </Provider>
     );
-  });
 
-  // Add more tests as needed
+    // Find input field by its associated label text
+    const productNameInput = screen.getByLabelText('Product Name:');
+    expect(productNameInput).toBeInTheDocument();
+  });
 });
