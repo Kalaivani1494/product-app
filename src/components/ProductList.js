@@ -9,10 +9,8 @@ import groceriesImage from '../images/groceries.jpg';
 import pharmaceuticalImage from '../images/pharmaceutical.jpg';
 import noProductsImage from '../images/no-products.jpg'; // Import the "No products available" image
 import allImage from '../images/all.jpg';
-import { useLocation } from 'react-router-dom';
 
 const ProductList = () => {
-  const location = useLocation();
   const [filterCategory, setFilterCategory] = useState('');
   const [categoryImage, setCategoryImage] = useState('');
   const products = useSelector((state) => state.products);
